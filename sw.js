@@ -1,5 +1,5 @@
 /* بُنيان — service worker: versioned offline shell, cache-first runtime for anything else */
-const VERSION = 'bunyan-shell-v1.0.0';
+const VERSION = 'bunyan-shell-v1.0.0-r2';
 const RUNTIME = 'bunyan-runtime-v1';
 const SHELL = [
   './', './index.html', './manifest.webmanifest', './css/app.css',

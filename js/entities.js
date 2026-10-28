@@ -189,7 +189,7 @@ export class Entities {
   }
   drop(id, count, x, y, z, opts = {}) {
     if (!id || count <= 0) return;
-    const a = Math.random() * Math.PI * 2, sp = opts.toss ? 0 : 1.6;
+    const a = Math.random() * Math.PI * 2, sp = opts.toss ? 0 : 0.9;
     const d = new Drop(id, count, opts.dur, x, y, z, opts.vx ?? Math.cos(a) * sp, opts.vy ?? 3.5, opts.vz ?? Math.sin(a) * sp);
     if (opts.pickDelay) d.pickDelay = opts.pickDelay;
     this.drops.push(d); this.group.add(d.model);
