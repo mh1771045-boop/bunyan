@@ -1,0 +1,24 @@
+{
+  "name": "بُنيان — ابنِ عالمك",
+  "short_name": "بُنيان",
+  "description": "لعبة بناء ومغامرة بالمكعبات بالعربي: عالم لا نهائي، صناعة أدوات، وحوش بالليل، وبتشتغل من غير نت.",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "orientation": "landscape",
+  "dir": "rtl",
+  "lang": "ar",
+  "theme_color": "#14152e",
+  "background_color": "#14152e",
+  "categories": ["games", "entertainment", "kids"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    { "name": "عوالمي", "short_name": "عوالمي", "description": "افتح قائمة العوالم", "url": "./#worlds", "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" }] }
+  ]
+}

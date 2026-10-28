@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>بُنيان</title>
+<meta name="description" content="بُنيان: لعبة بناء ومغامرة بالمكعبات بالعربي. عالم لا نهائي، صناعة، وحوش بالليل، وبتشتغل من غير نت.">
+<meta name="theme-color" content="#14152e">
+<meta name="color-scheme" content="light dark">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="بُنيان">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="stylesheet" href="css/app.css">
+<link rel="modulepreload" href="vendor/three.module.min.js">
+</head>
+<body>
+<canvas id="view" aria-label="عالم اللعبة"></canvas>
+
+<div id="hud" aria-live="off">
+  <div class="water-tint" id="waterTint"></div>
+  <div class="flash" id="flash"></div>
+  <div id="touchLayer"></div>
+  <div class="crosshair" id="crosshair"></div>
+  <div class="hud-info" id="hudInfo"></div>
+  <div class="hud-top">
+    <button class="hud-btn" id="pauseBtn" aria-label="إيقاف مؤقت"><svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1.2"/><rect x="14" y="5" width="4" height="14" rx="1.2"/></svg></button>
+  </div>
+  <div class="rotate-hint want" id="rotateHint">لف الموبايل بالعرض لتجربة أحسن ↻</div>
+  <div class="held-name" id="heldName"></div>
+  <div class="hotbar-wrap">
+    <div class="bar armorbar" id="armorBar"></div>
+    <div class="bars" id="bars"><div class="bar hearts" id="hearts"></div><div class="bar air" id="air"></div><div class="bar food" id="food"></div></div>
+    <div class="hotbar" id="hotbar"></div>
+  </div>
+</div>
+
+<div class="screen" id="splash"><img class="splash-logo" src="icons/icon-192.png" alt=""><div class="splash-name">بُنيان</div></div>
+<div class="screen" id="home"></div>
+<div class="screen page" id="worlds"></div>
+<div class="screen page" id="settings"></div>
+<div class="screen" id="loading">
+  <svg class="ring" viewBox="0 0 64 64"><circle class="bgc" cx="32" cy="32" r="27"/><circle class="fg" id="ringFg" cx="32" cy="32" r="27" stroke-dasharray="169.6" stroke-dashoffset="169.6"/></svg>
+  <div style="font-size:20px;font-weight:700" id="loadTitle">بنجهّز العالم…</div>
+  <div class="tip" id="loadTip"></div>
+</div>
+<div class="screen" id="death"></div>
+<div class="screen" id="onboard"></div>
+
+<div class="dim" id="dim"></div>
+<div id="sheets"></div>
+<div id="toasts" role="status" aria-live="polite"></div>
+<div id="update"><span>يوجد تحديث جديد لبُنيان</span><button class="pill" id="updateBtn">تحديث</button></div>
+<div class="sleep" id="sleepFade"></div>
+
+<noscript><p style="color:#fff;padding:20px;font-family:sans-serif">بُنيان محتاج JavaScript عشان يشتغل.</p></noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
